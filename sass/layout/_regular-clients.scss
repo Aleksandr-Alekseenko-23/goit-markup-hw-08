@@ -1,21 +1,22 @@
 .regular-clients {
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 
-
-    &__client {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 170px;
-    height: 92px;
+}
+    .regular-clients__client {
+    flex-basis: calc(((100% - ((2) - 1) * 30px)) / 2);
+        
+    @include mq(tab) {
+        flex-basis: calc(((100% - ((3) - 1) * 30px)) / 3);
+    }
+    
+    @include mq(desc) {
+        flex-basis: calc(((100% - ((6) - 1) * 30px)) / 6);
+    }
 }
 
-    &__client+&__client {
-    margin-left: 30px;
-}
-
-    &__link {
+       .regular-clients__link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -42,7 +43,7 @@
     }
 }
 
-    &__icon {
+    .regular-clients__icon {
     width: 106px;
     height: 60px;
 
@@ -53,5 +54,5 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-}
+
 

@@ -6,6 +6,16 @@
 
 }
 
+.aligment {
+    @include mq(desc) {
+display: flex;
+align-items: baseline;
+}
+    }
+    
+.logo-wrapper {
+    text-align: center;
+}
 .addres {
     margin-top: 20px;
 
@@ -16,11 +26,16 @@
     line-height: 1.71;
     letter-spacing: var(--first-letter-spacing);
 
+   
+}
 
-    &__link {
+    .addres__link {
 
     display: block;
-    margin-top: 9px;
+    margin-top: 8px;
+    @include mq(desc){
+        margin-top: 9px;
+    }
 
     color: rgba(255, 255, 255, 0.6);
 
@@ -34,4 +49,11 @@
     }
 }
 
+.tablet-wrapper {
+    @include mq(tab-only){
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        margin-bottom: 60px;
+    }
 }

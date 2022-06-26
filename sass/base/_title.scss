@@ -19,6 +19,11 @@
     line-height: 1.17;
     text-align: center;
     letter-spacing: var(first-letter-spacing);
+
+    @include mq(noDesc){
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
 }
 
 .title-second {

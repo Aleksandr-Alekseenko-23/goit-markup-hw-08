@@ -3,6 +3,12 @@ body {
     color: var(--first-text-color);
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .general-modal {
     display: flex;
     flex-direction: column;
@@ -29,10 +35,6 @@ body {
     outline: none;
 }
 
-.aligment {
-    display: flex;
-    align-items: baseline;
-}
 
 .nav {
     display: flex;

@@ -1,15 +1,24 @@
 .form-wrapper {
+    text-align: center;
+
+    @include mq(desc){
     margin-left: 93px;
+    }
 }
 
 .form-subscription {
     display: flex;
     flex-direction: column;
-    &__wrapper {
+}
+.form-subscription__wrapper {
+    text-align: center;
+
+    @include mq(desc){
     display: flex;
 }
+}
 
-    &__label {
+    .form-subscription__label {
     margin-bottom: 20px;
 
     font-weight: var(--bold-font-weight);
@@ -22,13 +31,17 @@
 
 }
 
-    &__input {
+    .form-subscription__input {
     width: 358px;
     height: 50px;
 
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
+    @include mq(noDesc) {
+    margin-bottom: 20px;
+}
+
 
     font-size: var(--second-font-size);
     line-height: 1.25;
@@ -43,11 +56,14 @@
     outline: none;
 }
 
-    &__button {
+    .form-subscription__button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-
+    @include mq(tab-only) {
+    display: block;
+    text-align: center;
+}
 
     font-weight: var(--bold-font-weight);
     font-size: var(--second-font-size);
@@ -56,7 +72,10 @@
 
     color: #FFFFFF;
 
+    @include mq(desc) {
     margin-left: 12px;
+}
+    
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 29px;
@@ -67,10 +86,10 @@
     background-color: var(--first-button-background-color);
 }
 
-    &__icon {
+    .form-subscription__icon {
     fill: #FFFFFF;
     margin-left: 10px;
 }
 
-}
+
 

@@ -4,10 +4,16 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-   
-
-}
-
-@media screen and (min-width: 400px) {
     
+
+    @include mq(mob){
+        width: 480px;
+    }
+    @include mq(tab){
+        width: 768px;
+    }
+    @include mq(desc){
+        width: 1200px;
+    }
 }
+
