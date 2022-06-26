@@ -14,10 +14,13 @@ align-items: baseline;
     }
     
 .logo-wrapper {
+    @include mq(noDesc){
     text-align: center;
+}
 }
 .addres {
     margin-top: 20px;
+   
 
     color: var(--second-text-color);
 
@@ -55,5 +58,9 @@ align-items: baseline;
         justify-content: space-around;
         align-items: baseline;
         margin-bottom: 60px;
+    }
+    @include mq(desc){
+        display: flex;
+        align-items: baseline;
     }
 }
