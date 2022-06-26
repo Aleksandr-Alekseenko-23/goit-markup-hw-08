@@ -1,0 +1,37 @@
+.mine-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--second-background-color);
+
+}
+
+.addres {
+    margin-top: 20px;
+
+    color: var(--second-text-color);
+
+    font-style: normal;
+    font-size: var(--first-font-size);
+    line-height: 1.71;
+    letter-spacing: var(--first-letter-spacing);
+
+
+    &__link {
+
+    display: block;
+    margin-top: 9px;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+        color: var(--second-link-color);
+    }
+}
+
+}

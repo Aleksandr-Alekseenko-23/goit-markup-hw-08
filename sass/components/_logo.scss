@@ -1,0 +1,20 @@
+
+
+.logo {
+    color: #000;
+
+    font-family: var(--additional-font-family);
+    font-weight: var(--bold-font-weight);
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: var(--first-letter-spacing);
+
+    &__color {
+        color: var(--second-link-color);
+    }
+    &__color-footer {
+    color: var(--second-text-color);
+
+}
+}
+

@@ -1,0 +1,46 @@
+body {
+    font-family: var(--head-font-family);
+    color: var(--first-text-color);
+}
+
+.general-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.general-label {
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: var(--first-text-color);
+}
+
+.general-input {
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+.aligment {
+    display: flex;
+    align-items: baseline;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.positioning {
+    display: flex;
+    align-items: center;
+}

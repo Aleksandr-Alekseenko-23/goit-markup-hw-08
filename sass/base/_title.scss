@@ -1,0 +1,41 @@
+.hero-title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    color: var(--second-text-color);
+
+    font-weight: var(--heavy-font-weight);
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: var(--second-letter-spacing);
+    text-transform: uppercase;
+
+}
+
+.title {
+    color: var(--first-link-color);
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: var(first-letter-spacing);
+}
+
+.title-second {
+    color: var(--first-link-color);
+
+    font-size: var(--third-font-size);
+    line-height: 2;
+    letter-spacing: var(--second-letter-spacing);
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.title-third {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    color: var(--first-link-color);
+
+    letter-spacing: var(--first-letter-spacing);
+}
