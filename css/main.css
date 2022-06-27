@@ -144,6 +144,13 @@ img {
   text-transform: uppercase;
 }
 
+@media (max-width: 1199.98px) {
+  .hero-title {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+
 .title {
   color: var(--first-link-color);
   margin-top: 0px;
@@ -214,6 +221,12 @@ img {
   letter-spacing: 0.02em;
 }
 
+@media (max-width: 767.98px) {
+  .nav-list {
+    display: none;
+  }
+}
+
 .nav-list__link {
   display: block;
   padding-top: 32px;
@@ -259,22 +272,49 @@ img {
   letter-spacing: 0.02em;
 }
 
+@media (max-width: 767.98px) {
+  .sity-cont {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .sity-cont {
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
 .sity-cont__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: var(--first-text-color);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media (min-width: 1200px) {
+  .sity-cont__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .sity-cont__link:hover, .sity-cont__link:focus {
   color: var(--second-link-color);
 }
 
-.sity-cont__items + .sity-cont__items {
-  margin-left: 50px;
+@media (min-width: 1200px) {
+  .sity-cont__items + .sity-cont__items {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sity-cont__items:first-child {
+    margin-bottom: 10px;
+  }
 }
 
 .sity-cont__icon {
@@ -295,17 +335,46 @@ img {
 
 .hero {
   background-color: rgba(47, 48, 58, 0.4);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img_hero.jpg);
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_mob_1x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
+  width: 100%;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_mob_2x.jpg);
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_tab_1x.jpg);
+  }
+}
+
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_tab_2x.jpg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_desc_1x.jpg);
+  }
+}
+
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_desc_2x.jpg);
+  }
 }
 
 .benefits__items {

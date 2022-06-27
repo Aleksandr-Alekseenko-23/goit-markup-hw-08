@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <!-- <header class="mine-header">
+    <header class="mine-header">
       <div class="container positioning">
         
           <nav class="nav">
@@ -44,57 +44,60 @@
             </ul>
         
       </div>
-      </header>   -->
+      <button type="button" class="menu-open">
+        <svg class="menu-open__icon" width="40" height="40">
+          <use href="./img/symbol-defs.svg#icon-menu  "></use>
+        </svg>
+      </button>
+      </div>
+      <div class="mob-menu">
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close">
+              <svg class="menu-close__icon" width="40" height="40">
+                <use href="./img/symbol-defs.svg#icon-close  "></use>
+              </svg>
+            </button>
+            <nav class="mob-navigation">
+              <ul class="mob-navigation__list list">
+                <li class="mob-navigation__item">
+                  <a href="" class="mob-navigation__link link">О нас</a>
+                </li>
+                <li class="mob-navigation__item">
+                  <a href="" class="mob-navigation__link link">Услуги и цены</a>
+                </li>
+                <li class="mob-navigation__item">
+                  <a href="" class="mob-navigation__link link">Мастера</a>
+                </li>
+                <li class="mob-navigation__item">
+                  <a href="" class="mob-navigation__link link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mob-menu-bottom">
+            <div class="mob-connect">
+              <a href="tel:+380441111111" class="mob-connect__tel link">+38 044 111 11 11</a>
+              <button type="button" class="mob-connect__btn btn btn--light" data-modal-open>
+                онлайн-запись
+              </button>
+            </div>
+            <ul class="mob-soc list">
+              <li class="mob-soc__item">
+                <a href="" target="_blank" class="mob-soc__link link" rel="noopener noreferrer nofollow">Instagram</a>
+              </li>
+              <li class="mob-soc__item">
+                <a href="" target="_blank" class="mob-soc__link link" rel="noopener noreferrer nofollow">Youtube</a>
+              </li>
+            </ul>
+          </div>
+      </header>  
 
-      <!-- <main>
+      <main>
         <section class="hero">
           <h1 class="hero-title">Эффективные решения <br>для вашего бизнеса</h1>
           <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal-form-container">
-              <button class="close-btn" data-modal-close>
-                <svg class="close-btn__icon" width="30" height="30">
-                  <use href="./images/symbol-defs2.svg#icon-close"></use>
-                </svg>
-              </button>
-
-              <form class="modal-form">
-                  <p class="modal-form__text">Оставьте свои данные, мы вам перезвоним</p>
-                  <div class="username general-modal">
-                    <label for="username" class="username__label general-label">Имя</label>
-                    <input type="text" name="username" autofocus id="username" class="username__input general-input" />
-                  <span class="username__icon"><svg width="18px" height="18px"><use href="./images/symbol-defs2.svg#icon-person-black"></use></svg></span>
-                  </div>
-                  <div class="phone general-modal">
-                    <label for="phone" class="phone__label general-label">Телефон</label>
-                    <input type="tel" name="phone_number" class="phone__input general-input" id="phone" />
-                  <span class="phone__icon"><svg width="18px" height="18px"><use href="./images/symbol-defs2.svg#icon-phone-black"></use></svg></span>
-                  </div>
-                  <div class="mail general-modal">
-                    <label for="email" class="general-label">Почта</label>
-                    <input type="email" name="email" class="mail__input general-input" id="email" />
-                    <span class="mail__icon"><svg width="18px" height="18px"><use href="./images/symbol-defs2.svg#icon-email-black"></use></svg></span>
-                  </div>
-                  <div class="feedback general-modal">
-                    <label for="feedback" class="feedback__label general-label">Комментарий</label>
-                    <textarea name="feedback" placeholder="Введите текст" class="feedback__input general-input general-label" id="feedback"></textarea>
-                  </div>
-                  <div class="checkbox">
-                    <label class="checkbox__label">
-                      <input type="checkbox" name="treaty" class="checkbox__input" />
-                      <span class="checkbox__icon"></span>Соглашаюсь с рассылкой и принимаю <a href="" class="checkbox__link">Условия договора</a>
-                      
-                    </label>
-                </div>
-                  <div class="button-send-modal">
-                    <button type="submit" class="button-send-modal__button">Отправить</button>
-                  </div>
-              </form>
-            </div>
-      
-          </div>
-        </section> -->
-
+        </section>
           <section class="section">
             <div class="container">
                   
@@ -153,16 +156,28 @@
     
             <ul class="work__list lists">
               <li class="work__items">
+                  <picture>
+                    <source srcset="./images/work_1_1x.jpg 1x, ./images/work_1_2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                    <img src="./images/work_1_1x.jpg" alt="Рабата за компьютером" width="370" />
+                  </picture>
                 
-                <img src="./images/img1.jpg" alt="Рабата за компьютером" width="370" />
                 <p class="work__label">Десктопные приложения</p>
               </li>
               <li class="work__items">
-                <img src="./images/img2.jpg" alt="Работа с телефоном" width="370" />
+                <picture>
+                  <source srcset="./images/work_2_1x.jpg 1x, ./images/work_2_2x.jpg 2x" media="(min-width: 1200px)" />
+                  <img src="./images/work_2_1x.jpg" alt="Работа с телефоном" width="370" />
+                </picture>
+                
                 <p class="work__label">Мобильные приложения</p>
               </li>
               <li class="work__items">
-                <img src="./images/img3.jpg" alt="Работа с цветом" width="370" />
+                <picture>
+                  <source srcset="./images/work_3_1x.jpg 1x, ./images/work_3_2x.jpg 2x" media="(min-width: 1200px)" />
+                  <img src="./images/work_3_1x.jpg" alt="Работа с цветом" width="370" />
+                </picture>
+                
                 <p class="work__label">Дизайнерские решения</p>
               </li>
 
@@ -177,7 +192,13 @@
                 
               <ul class="team lists card-set">
                 <li class="team__items card-set-item">
-                    <img src="./images/img1_1.jpg" alt="Игорь Демьяненко" width="270" />
+                  <picture>
+                    <source srcset="./images/team_desc_1_1x 1x, ./images/team_desc_1_2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/team_tab_1_1x 1x, ./images/team_tab_1_2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/team_mob_1_1x 1x, ./images/team_mob_1_2x.jpg 2x" media="(max-width: 767px)" />
+                    <img src="./images/team_mob_1_1x.jpg" alt="Игорь Демьяненко" />
+                  </picture>
+                   
                     <div class="team__wrapper">
                       <h3 class="team__title title-third">Игорь Демьяненко</h3>
                       <p class="team__text">
@@ -217,7 +238,13 @@
                     </div>
                 </li>
                 <li class="team__items card-set-item">
-                    <img src="./images/img2_2.jpg" alt="Ольга Репина" width="270"/>
+                  <picture>
+                    <source srcset="./images/team_desc_2_1x 1x, ./images/team_desc_2_2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/team_tab_2_1x 1x, ./images/team_tab_2_2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/team_mob_2_1x 1x, ./images/team_mob_2_2x.jpg 2x" media="(max-width: 767px)" />
+                    <img src="./images/team_mob_2_1x.jpg" alt="Ольга Репина" />
+                  </picture>
+                    
                     <div class="team__wrapper">
                       <h3 class="team__title title-third">Ольга Репина</h3>
                       <p class="team__text">
@@ -257,7 +284,13 @@
                     </div>
                 </li>
                 <li class="team__items card-set-item">
-                <img src="./images/img3_3.jpg" alt="Николай Тарасов" width="270"/>
+                  <picture>
+                    <source srcset="./images/team_desc_3_1x 1x, ./images/team_desc_3_2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/team_tab_3_1x 1x, ./images/team_tab_3_2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/team_mob_3_1x 1x, ./images/team_mob_3_2x.jpg 2x" media="(max-width: 767px)" />
+                    <img src="./images/team_mob_3_1x.jpg" alt="Николай Тарасов" />
+                  </picture>
+               
                     <div class="team__wrapper">
                       <h3 class="team__title title-third">Николай Тарасов</h3>
                           <p class="team__text">
@@ -297,7 +330,13 @@
                     </div>
                 </li>
                 <li class="team__items card-set-item">
-                  <img src="./images/img4_4.jpg" alt="Михаил Ермаков" width="270"/>
+                  <picture>
+                    <source srcset="./images/team_desc_4_1x 1x, ./images/team_desc_4_2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/team_tab_4_1x 1x, ./images/team_tab_4_2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/team_mob_4_1x 1x, ./images/team_mob_4_2x.jpg 2x" media="(max-width: 767px)" />
+                    <img src="./images/team_mob_4_1x.jpg" alt="Михаил Ермаков" />
+                  </picture>
+                 
                     <div class="team__wrapper">
                       <h3 class="team__title title-third">Михаил Ермаков</h3>
                           <p class="team__text">
@@ -455,6 +494,59 @@
           </div>
         </div>
       </footer>
+      <!-- <div class="backdrop is-hidden" data-modal>
+        <div class="modal-form-container">
+          <button class="close-btn" data-modal-close>
+            <svg class="close-btn__icon" width="30" height="30">
+              <use href="./images/symbol-defs2.svg#icon-close"></use>
+            </svg>
+          </button>
+      
+          <form class="modal-form">
+            <p class="modal-form__text">Оставьте свои данные, мы вам перезвоним</p>
+            <div class="username general-modal">
+              <label for="username" class="username__label general-label">Имя</label>
+              <input type="text" name="username" autofocus id="username" class="username__input general-input" />
+              <span class="username__icon"><svg width="18px" height="18px">
+                  <use href="./images/symbol-defs2.svg#icon-person-black"></use>
+                </svg></span>
+            </div>
+            <div class="phone general-modal">
+              <label for="phone" class="phone__label general-label">Телефон</label>
+              <input type="tel" name="phone_number" class="phone__input general-input" id="phone" />
+              <span class="phone__icon"><svg width="18px" height="18px">
+                  <use href="./images/symbol-defs2.svg#icon-phone-black"></use>
+                </svg></span>
+            </div>
+            <div class="mail general-modal">
+              <label for="email" class="general-label">Почта</label>
+              <input type="email" name="email" class="mail__input general-input" id="email" />
+              <span class="mail__icon"><svg width="18px" height="18px">
+                  <use href="./images/symbol-defs2.svg#icon-email-black"></use>
+                </svg></span>
+            </div>
+            <div class="feedback general-modal">
+              <label for="feedback" class="feedback__label general-label">Комментарий</label>
+              <textarea name="feedback" placeholder="Введите текст" class="feedback__input general-input general-label"
+                id="feedback"></textarea>
+            </div>
+            <div class="checkbox">
+              <label class="checkbox__label">
+                <input type="checkbox" name="treaty" class="checkbox__input" />
+                <span class="checkbox__icon"></span>Соглашаюсь с рассылкой и принимаю <a href=""
+                  class="checkbox__link">Условия договора</a>
+      
+              </label>
+            </div>
+            <div class="button-send-modal">
+              <button type="submit" class="button-send-modal__button">Отправить</button>
+            </div>
+          </form>
+        </div>
+      
+      </div>
+       -->
+
       <script src="./js/modal.js"></script>
 </body>
 </html>

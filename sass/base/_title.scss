@@ -8,7 +8,11 @@
     line-height: 1.36;
     letter-spacing: var(--second-letter-spacing);
     text-transform: uppercase;
-
+    @include mq(noDesc){
+    font-size: 26px;
+    line-height: 1.62;
+   
+}
 }
 
 .title {
