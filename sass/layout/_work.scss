@@ -1,18 +1,26 @@
 .work {
     padding-bottom: 94px;
 
-    @media screen and (max-width: 1199px){
+    @include mq(noDesc){
         display: none;
     }
 
 }
     .work__list {
     display: flex;
+
+    @include mq(noDesc) {
+        display: none;
+    }
 }
 
     .work__items {
     position: relative;
     z-index: 0;
+
+    @include mq(noDesc) {
+        display: none;
+    }
 }
 
     .work__label {
@@ -36,9 +44,17 @@
     letter-spacing: var(--first-letter-spacing);
     text-transform: uppercase;
 
+    @include mq(noDesc) {
+        display: none;
+    }
+
 }
 
 
     .work__items+.work__items {
     margin-left: 30px;
+
+    @include mq(noDesc) {
+        display: none;
+    }
 }

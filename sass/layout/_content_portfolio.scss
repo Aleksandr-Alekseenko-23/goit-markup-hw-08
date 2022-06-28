@@ -41,6 +41,8 @@
     right: 0;
     bottom: 0;
 
+    overflow: auto;
+
     width: 100%;
     height: 100%;
 
@@ -72,7 +74,8 @@
     margin: 0;
 
     font-size: var(--third-font-size);
-    line-height: 1.56
+    line-height: 1.56;
+    
 }
     .content-portfolio__text {
     color: var(--first-text-color);

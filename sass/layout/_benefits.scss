@@ -1,5 +1,4 @@
-// .benefits {
-// }
+
     .benefits__items {
    
     max-width: 450px;
@@ -9,6 +8,8 @@
     }
     @include mq(desc){
         max-width: 270px;
+        height: 120px;
+        
     }
 }
     
@@ -34,14 +35,18 @@
 
 }
 
-    .benefits__icon {
-    display: inline-flex;
+.benefits__icon {
+    display: inline-block;
     justify-content: center;
     align-items: center;
 
     margin-bottom: 30px;
-
+    
     background-color: #F5F4FA;
     width: 100%;
-
+    @include mq(desc) {
+        width: 270px;
+        height: 120px;
+       
+}
 }

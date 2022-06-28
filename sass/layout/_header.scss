@@ -3,7 +3,15 @@
     border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
+.positioning {
+    display: flex;
+    align-items: center;
 
+    @include mq(mob-only){
+        position: relative;
+        height: 60px;
+}
+}
 
 .nav-list {
     display: flex;
@@ -34,16 +42,27 @@
         &:focus {
     color: var(--second-link-color);
 }
+    @include mq(mob-only) {
+    display: none;
+}
 }
 
 
 
     .nav-list__items {
     position: relative;
+
+    @include mq(mob-only) {
+    display: none;
+    }
 }
 
     .nav-list__items+.nav-list__items {
     margin-left: 50px;
+
+    @include mq(mob-only) {
+    display: none;
+    }
 }
 
     .nav-list__color {
@@ -58,6 +77,9 @@
         border-radius: 2px;
         display: block;
         bottom: 0;
+    }
+    @include mq(mob-only) {
+    display: none;
     }
 }
 
@@ -103,6 +125,9 @@
             color: var(--second-link-color);
     
         }
+        @include mq(mob-only) {
+        display: none;
+        }
     }
 
 .sity-cont__items+.sity-cont__items {
@@ -119,21 +144,59 @@
 .sity-cont__icon {
         margin-right: 10px;
         fill: currentColor;
-
+    @include mq(mob-only) {
+    display: none;
+}
     }
 
 .sity-cont__icon-envelope {
         width: 16px;
         height: 12px;
+        @include mq(mob-only) {
+        display: none;
+        }
     }
     
 .sity-cont__icon-smartphone {
         width: 10px;
         height: 16px;
         margin-bottom: 0px;
+        @include mq(mob-only) {
+        display: none;
+        }
+    }
+
+.mob-menu {
+    position: fixed;
+    z-index: 1;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+
+    @include mq(tab) {
+        display: none;
+    }
+}
+    .mob-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding-left: 40px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-right: 15px;
+        justify-content: space-between;
+        overflow: auto;
+
+        @include mq(tab) {
+            display: none;
+        }
     }
 
    
+
 .button-menu {
     position: absolute;
     top: 10px;
@@ -144,7 +207,7 @@
     padding: 0;
     border: transparent;
     background-color: transparent;
-    display: block;
+  
     
     @include mq(tab) {
     display: none;
@@ -193,42 +256,26 @@
     }
 }
 
-.mob-menu {
-    position: fixed;
-    z-index: 1;
-    background-color: #ffffff;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
 
-    .mob-container {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        padding-left: 40px;
-        padding-top: 48px;
-        padding-bottom: 48px;
-        padding-right: 15px;
-        justify-content: space-between;
-        overflow: auto;
-    }
-    @include mq(tab) {
-        display: none;
-    }
-}
 .mob-nav__list {
     font-weight: 500;
     font-size: 40px;
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: #212121;
+
+    @include mq(tab) {
+    display: none;
+    }
 }
 
 .mob-nav__item {
     margin-bottom: 32px;
 &:last-child {
     margin-bottom: 0;
+}
+    @include mq(tab) {
+    display: none;
 }
 }
 
@@ -242,10 +289,17 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--second-link-color);
 
 }
+    @include mq(tab) {
+    display: none;
+}
 }
 
-mob-nav__link-color {
+.mob-nav__link-color {
     color: #2196F3;
+
+    @include mq(tab) {
+    display: none;
+    }
 }
     
 .mob-cont {
@@ -253,16 +307,27 @@ mob-nav__link-color {
     font-size: 34px;
     line-height: 1.18;
     letter-spacing: 0.02em;
-    
+
+    @include mq(tab) {
+    display: none;
+    }
 }
 
     .mob-cont__link{
     color: #2196F3;
+
+    @include mq(tab) {
+    display: none;
+    }
 }
 .mob-cont__link-color {
     font-size: 24px;
     line-height: 1.17;
     color: #757575;
+
+    @include mq(tab) {
+    display: none;
+    }
 }
 
 .mob-cont__items {
@@ -270,15 +335,20 @@ mob-nav__link-color {
   &:last-child{
       margin-bottom: 64px;
   }  
+@include mq(tab) {
+    display: none;
+}
 }
 
 .mob-soc {
     display: flex;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 1.22;
     letter-spacing: 0.02em;
-
+@include mq(tab) {
+    display: none;
+}
 }
 
 .mob-soc__item {
@@ -287,15 +357,27 @@ mob-nav__link-color {
     &:last-child{
         border-right: none;
     }
+
+    @include mq(tab) {
+    display: none;
+    }
 }
 
 .mob-soc__item + .mob-soc__item {
     margin-left: 10px;
+
+    @include mq(tab) {
+    display: none;
+}
     
 }
 
 .mob-soc__link {
     color: #2196F3;
+
+    @include mq(tab) {
+    display: none;
+}
 }
 
 

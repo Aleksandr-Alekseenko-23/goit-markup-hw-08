@@ -49,11 +49,3 @@ img {
 
 }
 
-.positioning {
-    display: flex;
-    align-items: center;
-    @include mq(mob-only){
-        position: relative;
-        height: 60px;
-    }
-}

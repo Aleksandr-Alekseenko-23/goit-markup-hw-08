@@ -5,13 +5,17 @@
         rgba(47, 48, 58, 0.4)),
     url(../images/hero_mob_1x.jpg);
     
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 118px;
     padding-bottom: 118px;
     text-align: center;
     width: 100%;
+    display: block;
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -43,6 +47,10 @@
 @include mq(desc) {
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+   
+   
    
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
@@ -57,4 +65,9 @@
                 rgba(47, 48, 58, 0.4)),
             url(../images/hero_desc_2x.jpg); }
     }
+}
+
+.hero__wrappen{
+    padding-left: 10px;
+    padding-right: 10px;
 }
