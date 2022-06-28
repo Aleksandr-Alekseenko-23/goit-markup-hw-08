@@ -44,7 +44,70 @@
                 </ul>
            
         </div>
+        <button type="button" class="button-menu">
+            <svg class="button-menu__icon" width="40" height="40">
+                <use href="./images/symbol-defs2.svg#icon-menu"></use>
+            </svg>
+        </button>
         
+        <div class="mob-menu is-hidden">
+            <div class="mob-container">
+                <div class="mob-menu-top">
+                    <button type="button" class="button-close">
+                        <svg class="button-close__icon" width="40" height="40">
+                            <use href="./images/symbol-defs2.svg#icon-close_menu"></use>
+                        </svg>
+                    </button>
+                    <nav class="mob-nav">
+                        <ul class="mob-nav__list lists">
+                            <li class="mob-nav__item">
+                                <a href="./index.html" class="mob-nav__link link-utilities">Студия</a>
+                            </li>
+                            <li class="mob-nav__item">
+                                <a href="./portfolio.html" class="mob-nav__link mob-nav__link-color link-utilities">Портфолио</a>
+                            </li>
+                            <li class="mob-nav__item">
+                                <a href="" class="mob-nav__link link-utilities">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mob-menu-bottom">
+        
+                    <ul class="mob-cont lists">
+                        <li class="mob-cont__items">
+                            <a href="tel:+380961111111" class="mob-cont__link link-utilities">
+                                +380961111111
+                            </a>
+                        </li>
+                        <li class="mob-cont__items">
+                            <a href="mailto:info@devstudio.com" class="mob-cont__link mob-cont__link-color link-utilities">
+                                info@devstudio.com
+                            </a>
+                        </li>
+        
+                    </ul>
+                    <ul class="mob-soc lists">
+                        <li class="mob-soc__item">
+                            <a href="" target="_blank" class="mob-soc__link link-utilities"
+                                rel="noopener noreferrer nofollow">Instagram</a>
+                        </li>
+                        <li class="mob-soc__item">
+                            <a href="" target="_blank" class="mob-soc__link link-utilities"
+                                rel="noopener noreferrer nofollow">Twitter</a>
+                        </li>
+                        <li class="mob-soc__item">
+                            <a href="" target="_blank" class="mob-soc__link link-utilities"
+                                rel="noopener noreferrer nofollow">Facebook</a>
+                        </li>
+                        <li class="mob-soc__item">
+                            <a href="" target="_blank" class="mob-soc__link link-utilities"
+                                rel="noopener noreferrer nofollow">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
       </header>  
 
       <main>
@@ -59,12 +122,17 @@
                     <li class="button-portfolio__list"><button type="button" class="button-portfolio__button">Маркетинг</button></li>
                 </ul>
         
-                <ul class="content-portfolio lists">
-                    <li class="content-portfolio__items">
+                <ul class="content-portfolio card-set lists">
+                    <li class="content-portfolio__items card-set-item">
                         <a href="" class="content-portfolio__link link-utilities">
                             <div class="content-portfolio__box">
-                                <img src="./images/img21.jpg" alt="Ноутбук" width="370">
-                                
+                                <picture>
+                                    <source srcset="./images/port_desc_1_1x 1x, ./images/port_desc_1_2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/port_tab_1_1x 1x, ./images/port_tab_1_2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/port_mob_1_1x 1x, ./images/port_mob_1_2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img src="./images/port_mob_1_1x.jpg" alt="Ноутбук" />
+                                </picture>
+                                                              
                                     <div class="content-portfolio__overlay-box">
                                         <p class="content-portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                     </div>
@@ -76,10 +144,15 @@
                         </a>
 
                     </li>
-                    <li class="content-portfolio__items">
+                    <li class="content-portfolio__items card-set-item">
                         <a href="" class="content-portfolio__link link-utilities">
                             <div class="content-portfolio__box">
-                                <img src="./images/img22.jpg" alt="Баскетболисты" width="370">
+                                <picture>
+                                    <source srcset="./images/port_desc_2_1x 1x, ./images/port_desc_2_2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/port_tab_2_1x 1x, ./images/port_tab_2_2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/port_mob_2_1x 1x, ./images/port_mob_2_2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img src="./images/port_mob_2_1x.jpg" alt="Баскетболисты" />
+                                </picture>
                                 <div class="content-portfolio__overlay-box">
                                     <p class="content-portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
@@ -91,10 +164,16 @@
                         </a>
 
                     </li>
-                    <li class="content-portfolio__items">
+                    <li class="content-portfolio__items card-set-item">
                         <a href="" class="content-portfolio__link link-utilities">
                             <div class="content-portfolio__box">
-                                <img src="./images/img23.jpg" alt="Название рестарана" width="370">
+                                <picture>
+                                    <source srcset="./images/port_desc_3_1x 1x, ./images/port_desc_3_2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/port_tab_3_1x 1x, ./images/port_tab_3_2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/port_mob_3_1x 1x, ./images/port_mob_3_2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img src="./images/port_mob_3_1x.jpg" alt="Название рестарана" />
+                                </picture>
+
                                 <div class="content-portfolio__overlay-box">
                                     <p class="content-portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
@@ -106,10 +185,16 @@
                         </a>
 
                     </li>
-                    <li class="content-portfolio__items">
+                    <li class="content-portfolio__items card-set-item">
                         <a href="" class="content-portfolio__link link-utilities">
                             <div class="content-portfolio__box">
-                                <img src="./images/img24.jpg" alt="Наушники" width="370">
+                                <picture>
+                                    <source srcset="./images/port_desc_4_1x 1x, ./images/port_desc_4_2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/port_tab_4_1x 1x, ./images/port_tab_4_2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/port_mob_4_1x 1x, ./images/port_mob_4_2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img src="./images/port_mob_4_1x.jpg" alt="Наушники" />
+                                </picture>
+
                                 <div class="content-portfolio__overlay-box">
                                     <p class="content-portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
@@ -123,10 +208,16 @@
 
                     </li>
                 
-                    <li class="content-portfolio__items">
+                    <li class="content-portfolio__items card-set-item">
                         <a href="" class="content-portfolio__link link-utilities">
                             <div class="content-portfolio__box">
-                                <img src="./images/img25.jpg" alt="Коробки" width="370">
+                                <picture>
+                                    <source srcset="./images/port_desc_5_1x 1x, ./images/port_desc_5_2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/port_tab_5_1x 1x, ./images/port_tab_5_2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/port_mob_5_1x 1x, ./images/port_mob_5_2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img src="./images/port_mob_5_1x.jpg" alt="Коробки" />
+                                </picture>
+
                                 <div class="content-portfolio__overlay-box">
                                     <p class="content-portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
@@ -139,10 +230,16 @@
 
                     </li>
 
-                    <li class="content-portfolio__items">
+                    <li class="content-portfolio__items card-set-item">
                         <a href="" class="content-portfolio__link link-utilities">
                             <div class="content-portfolio__box">
-                                <img src="./images/img26.jpg" alt="Компьютер" width="370">
+                                <picture>
+                                    <source srcset="./images/port_desc_6_1x 1x, ./images/port_desc_6_2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/port_tab_6_1x 1x, ./images/port_tab_6_2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/port_mob_6_1x 1x, ./images/port_mob_6_2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img src="./images/port_mob_6_1x.jpg" alt="Компьютер" />
+                                </picture>
+
                                 <div class="content-portfolio__overlay-box">
                                     <p class="content-portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
@@ -155,10 +252,16 @@
 
                     </li>
 
-                    <li class="content-portfolio__items">
+                    <li class="content-portfolio__items card-set-item">
                         <a href="" class="content-portfolio__link link-utilities">
                             <div class="content-portfolio__box">
-                                <img src="./images/img27.jpg" alt="Журнал" width="370">
+                                <picture>
+                                    <source srcset="./images/port_desc_7_1x 1x, ./images/port_desc_7_2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/port_tab_7_1x 1x, ./images/port_tab_7_2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/port_mob_7_1x 1x, ./images/port_mob_7_2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img src="./images/port_mob_7_1x.jpg" alt="Журнал" />
+                                </picture>
+
                                 <div class="content-portfolio__overlay-box">
                                     <p class="content-portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
@@ -171,10 +274,16 @@
                         </a>
 
                     </li>
-                    <li class="content-portfolio__items">
+                    <li class="content-portfolio__items card-set-item">
                         <a href="" class="content-portfolio__link link-utilities">
                             <div class="content-portfolio__box">
-                                <img src="./images/img28.jpg" alt="Бирка" width="370">
+                                <picture>
+                                    <source srcset="./images/port_desc_8_1x 1x, ./images/port_desc_8_2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/port_tab_8_1x 1x, ./images/port_tab_8_2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/port_mob_8_1x 1x, ./images/port_mob_8_2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img src="./images/port_mob_8_1x.jpg" alt="Бирка" />
+                                </picture>
+
                                 <div class="content-portfolio__overlay-box">
                                     <p class="content-portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
@@ -187,10 +296,16 @@
                         </a>
 
                     </li>
-                    <li class="content-portfolio__items">
+                    <li class="content-portfolio__items card-set-item">
                         <a href="" class="content-portfolio__link link-utilities">
                             <div class="content-portfolio__box">
-                                <img src="./images/img29.jpg" alt="Макбук" width="370">
+                                <picture>
+                                    <source srcset="./images/port_desc_9_1x 1x, ./images/port_desc_9_2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/port_tab_9_1x 1x, ./images/port_tab_9_2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/port_mob_9_1x 1x, ./images/port_mob_9_2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img src="./images/port_mob_9_1x.jpg" alt="Макбук" />
+                                </picture>
+ 
                                 <div class="content-portfolio__overlay-box">
                                     <p class="content-portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
@@ -210,66 +325,71 @@
            
       </main>
       
-      <footer class="mine-footer">
+    <footer class="mine-footer">
         <div class="container aligment">
-          <div>
-            <a href="./index.html" class="logo link-utilities"><span class="logo__color">Web</span><span class="logo__color-footer">Studio</span></a> 
-            <address class="addres">
-                г. Киев, пр-т Леси Украинки, 26  
-                <a href="mailto:info@example.com" class="addres__link link-utilities">info@example.com</a> 
-                <a href="tel:+380991111111" class="addres__link link-utilities">+380991111111</a> 
-            </address>
-          </div>
-          <div class="social-networks__wrapper">
-            <p class="social-networks__text">Присоединяйтесь</p>
-            <ul class="social-networks lists">
-              <li class="social-networks__network social-networks__background">
-                <a href="https://www.instagram.com" class="social-networks__link link-utilities">
-                  <svg class="social-networks__icon social-networks__icon-fill" aria-label="Инстаграм">
-                    <use href="./images/symbol-defs2.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-networks__network social-networks__background">
-                <a href="https://www.twitter.com" class="social-networks__link link-utilities">
-                  <svg class="social-networks__icon social-networks__icon-fill" aria-label="Твиттер">
-                    <use href="./images/symbol-defs2.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-networks__network  social-networks__background">
-                <a href="https://www.facebook.com" class="social-networks__link link-utilities">
-                  <svg class="social-networks__icon social-networks__icon-fill" aria-label="Фейсбук">
-                    <use href="./images/symbol-defs2.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-networks__network social-networks__background">
-                <a href="https://www.linkedin.com" class="social-networks__link link-utilities">
-                  <svg class="social-networks__icon social-networks__icon-fill" aria-label="Ленкидым">
-                    <use href="./images/symbol-defs2.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="form-wrapper">
-            <form class="form-subscription">
-              <label for="mailing-list" class="form-subscription__label">Подпишитесь на рассылку</label>
-              <div class="form-subscription__wrapper">
-                <input type="text" name="subscription" placeholder="E-mail" class="form-subscription__input" id="mailing-list">
-              
-                <button type="submit" class="form-subscription__button">Подписаться
-                  
-                  <svg class="form-subscription__icon" width="24" height="24">
-                    <use href="./images/symbol-defs2.svg#icon-icon-send"></use>
-                  </svg>
-                
-                </button>
-              </div>
-            </form>
-          </div>
+            <div class="tablet-wrapper">
+                <div class="logo-wrapper">
+                    <a href="./index.html" class="logo link-utilities"><span class="logo__color">Web</span><span
+                            class="logo__color-footer">Studio</span></a>
+                    <address class="addres">
+                        г. Киев, пр-т Леси Украинки, 26
+                        <a href="mailto:info@example.com" class="addres__link link-utilities">info@example.com</a>
+                        <a href="tel:+380991111111" class="addres__link link-utilities">+380991111111</a>
+                    </address>
+                </div>
+                <div class="social-networks__wrapper">
+                    <p class="social-networks__text">Присоединяйтесь</p>
+                    <ul class="social-networks lists">
+                        <li class="social-networks__network social-networks__background">
+                            <a href="https://www.instagram.com" class="social-networks__link link-utilities">
+                                <svg class="social-networks__icon social-networks__icon-fill" aria-label="Инстаграм">
+                                    <use href="./images/symbol-defs2.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-networks__network social-networks__background">
+                            <a href="https://www.twitter.com" class="social-networks__link link-utilities">
+                                <svg class="social-networks__icon social-networks__icon-fill" aria-label="Твиттер">
+                                    <use href="./images/symbol-defs2.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-networks__network  social-networks__background">
+                            <a href="https://www.facebook.com" class="social-networks__link link-utilities">
+                                <svg class="social-networks__icon social-networks__icon-fill" aria-label="Фейсбук">
+                                    <use href="./images/symbol-defs2.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-networks__network social-networks__background">
+                            <a href="https://www.linkedin.com" class="social-networks__link link-utilities">
+                                <svg class="social-networks__icon social-networks__icon-fill" aria-label="Ленкидым">
+                                    <use href="./images/symbol-defs2.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form-wrapper">
+                <form class="form-subscription">
+                    <label for="mailing-list" class="form-subscription__label">Подпишитесь на рассылку</label>
+                    <div class="form-subscription__wrapper">
+                        <input type="text" name="subscription" placeholder="E-mail" class="form-subscription__input"
+                            id="mailing-list">
+    
+                        <button type="submit" class="form-subscription__button">Подписаться
+    
+                            <svg class="form-subscription__icon" width="24" height="24">
+                                <use href="./images/symbol-defs2.svg#icon-icon-send"></use>
+                            </svg>
+    
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
-      </footer>
+    </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

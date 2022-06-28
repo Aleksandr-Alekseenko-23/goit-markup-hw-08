@@ -44,59 +44,122 @@
             </ul>
         
       </div>
-      <button type="button" class="menu-open">
-        <svg class="menu-open__icon" width="40" height="40">
-          <use href="./img/symbol-defs.svg#icon-menu  "></use>
+      <button type="button" class="button-menu">
+        <svg class="button-menu__icon" width="40" height="40">
+          <use href="./images/symbol-defs2.svg#icon-menu"></use>
         </svg>
       </button>
-      </div>
-      <div class="mob-menu">
-        <div class="container">
+   
+      <div class="mob-menu is-hidden">
+        <div class="mob-container">
           <div class="mob-menu-top">
-            <button type="button" class="menu-close">
-              <svg class="menu-close__icon" width="40" height="40">
-                <use href="./img/symbol-defs.svg#icon-close  "></use>
+            <button type="button" class="button-close">
+              <svg class="button-close__icon" width="40" height="40">
+                <use href="./images/symbol-defs2.svg#icon-close_menu"></use>
               </svg>
             </button>
-            <nav class="mob-navigation">
-              <ul class="mob-navigation__list list">
-                <li class="mob-navigation__item">
-                  <a href="" class="mob-navigation__link link">О нас</a>
+            <nav class="mob-nav">
+              <ul class="mob-nav__list lists">
+                <li class="mob-nav__item">
+                  <a href="./index.html" class="mob-nav__link mob-nav__link-color link-utilities">Студия</a>
                 </li>
-                <li class="mob-navigation__item">
-                  <a href="" class="mob-navigation__link link">Услуги и цены</a>
+                <li class="mob-nav__item">
+                  <a href="./portfolio.html" class="mob-nav__link link-utilities">Портфолио</a>
                 </li>
-                <li class="mob-navigation__item">
-                  <a href="" class="mob-navigation__link link">Мастера</a>
-                </li>
-                <li class="mob-navigation__item">
-                  <a href="" class="mob-navigation__link link">Контакты</a>
+                <li class="mob-nav__item">
+                  <a href="" class="mob-nav__link link-utilities">Контакты</a>
                 </li>
               </ul>
             </nav>
           </div>
           <div class="mob-menu-bottom">
-            <div class="mob-connect">
-              <a href="tel:+380441111111" class="mob-connect__tel link">+38 044 111 11 11</a>
-              <button type="button" class="mob-connect__btn btn btn--light" data-modal-open>
-                онлайн-запись
-              </button>
-            </div>
-            <ul class="mob-soc list">
+         
+            <ul class="mob-cont lists">
+              <li class="mob-cont__items">
+                <a href="tel:+380961111111" class="mob-cont__link link-utilities">
+                  +380961111111
+                </a>
+              </li>
+              <li class="mob-cont__items">
+                <a href="mailto:info@devstudio.com" class="mob-cont__link mob-cont__link-color link-utilities">
+                  info@devstudio.com
+                </a>
+              </li>
+              
+            </ul>
+            <ul class="mob-soc lists">
               <li class="mob-soc__item">
-                <a href="" target="_blank" class="mob-soc__link link" rel="noopener noreferrer nofollow">Instagram</a>
+                <a href="" target="_blank" class="mob-soc__link link-utilities" rel="noopener noreferrer nofollow">Instagram</a>
               </li>
               <li class="mob-soc__item">
-                <a href="" target="_blank" class="mob-soc__link link" rel="noopener noreferrer nofollow">Youtube</a>
+                <a href="" target="_blank" class="mob-soc__link link-utilities" rel="noopener noreferrer nofollow">Twitter</a>
+              </li>
+              <li class="mob-soc__item">
+                <a href="" target="_blank" class="mob-soc__link link-utilities" rel="noopener noreferrer nofollow">Facebook</a>
+              </li>
+              <li class="mob-soc__item">
+                <a href="" target="_blank" class="mob-soc__link link-utilities" rel="noopener noreferrer nofollow">LinkedIn</a>
               </li>
             </ul>
           </div>
+        </div>
+      </div>
       </header>  
 
       <main>
         <section class="hero">
           <h1 class="hero-title">Эффективные решения <br>для вашего бизнеса</h1>
           <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal-form-container">
+              <button class="close-btn" data-modal-close>
+                <svg class="close-btn__icon" width="30" height="30">
+                  <use href="./images/symbol-defs2.svg#icon-close"></use>
+                </svg>
+              </button>
+          
+              <form class="modal-form">
+                <p class="modal-form__text">Оставьте свои данные, мы вам перезвоним</p>
+                <div class="username general-modal">
+                  <label for="username" class="username__label general-label">Имя</label>
+                  <input type="text" name="username" autofocus id="username" class="username__input general-input" />
+                  <span class="username__icon"><svg width="18px" height="18px">
+                      <use href="./images/symbol-defs2.svg#icon-person-black"></use>
+                    </svg></span>
+                </div>
+                <div class="phone general-modal">
+                  <label for="phone" class="phone__label general-label">Телефон</label>
+                  <input type="tel" name="phone_number" class="phone__input general-input" id="phone" />
+                  <span class="phone__icon"><svg width="18px" height="18px">
+                      <use href="./images/symbol-defs2.svg#icon-phone-black"></use>
+                    </svg></span>
+                </div>
+                <div class="mail general-modal">
+                  <label for="email" class="general-label">Почта</label>
+                  <input type="email" name="email" class="mail__input general-input" id="email" />
+                  <span class="mail__icon"><svg width="18px" height="18px">
+                      <use href="./images/symbol-defs2.svg#icon-email-black"></use>
+                    </svg></span>
+                </div>
+                <div class="feedback general-modal">
+                  <label for="feedback" class="feedback__label general-label">Комментарий</label>
+                  <textarea name="feedback" placeholder="Введите текст" class="feedback__input general-input general-label"
+                    id="feedback"></textarea>
+                </div>
+                <div class="checkbox">
+                  <label class="checkbox__label">
+                    <input type="checkbox" name="treaty" class="checkbox__input" />
+                    <span class="checkbox__icon"></span>Соглашаюсь с рассылкой и принимаю <a href=""
+                      class="checkbox__link">Условия договора</a>
+          
+                  </label>
+                </div>
+                <div class="button-send-modal">
+                  <button type="submit" class="button-send-modal__button">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </section>
           <section class="section">
             <div class="container">
@@ -359,7 +422,7 @@
                             </a>
                           </li>
                           <li class="social-networks__network">
-                            <a href="https://www.facebook.com" class="network-link link-utilities">
+                            <a href="https://www.facebook.com" class="social-networks__link link-utilities">
                               <svg class="social-networks__icon" aria-label="Фейсбук">
                                 <use href="./images/symbol-defs2.svg#icon-facebook"></use>
                               </svg>
@@ -494,59 +557,9 @@
           </div>
         </div>
       </footer>
-      <!-- <div class="backdrop is-hidden" data-modal>
-        <div class="modal-form-container">
-          <button class="close-btn" data-modal-close>
-            <svg class="close-btn__icon" width="30" height="30">
-              <use href="./images/symbol-defs2.svg#icon-close"></use>
-            </svg>
-          </button>
-      
-          <form class="modal-form">
-            <p class="modal-form__text">Оставьте свои данные, мы вам перезвоним</p>
-            <div class="username general-modal">
-              <label for="username" class="username__label general-label">Имя</label>
-              <input type="text" name="username" autofocus id="username" class="username__input general-input" />
-              <span class="username__icon"><svg width="18px" height="18px">
-                  <use href="./images/symbol-defs2.svg#icon-person-black"></use>
-                </svg></span>
-            </div>
-            <div class="phone general-modal">
-              <label for="phone" class="phone__label general-label">Телефон</label>
-              <input type="tel" name="phone_number" class="phone__input general-input" id="phone" />
-              <span class="phone__icon"><svg width="18px" height="18px">
-                  <use href="./images/symbol-defs2.svg#icon-phone-black"></use>
-                </svg></span>
-            </div>
-            <div class="mail general-modal">
-              <label for="email" class="general-label">Почта</label>
-              <input type="email" name="email" class="mail__input general-input" id="email" />
-              <span class="mail__icon"><svg width="18px" height="18px">
-                  <use href="./images/symbol-defs2.svg#icon-email-black"></use>
-                </svg></span>
-            </div>
-            <div class="feedback general-modal">
-              <label for="feedback" class="feedback__label general-label">Комментарий</label>
-              <textarea name="feedback" placeholder="Введите текст" class="feedback__input general-input general-label"
-                id="feedback"></textarea>
-            </div>
-            <div class="checkbox">
-              <label class="checkbox__label">
-                <input type="checkbox" name="treaty" class="checkbox__input" />
-                <span class="checkbox__icon"></span>Соглашаюсь с рассылкой и принимаю <a href=""
-                  class="checkbox__link">Условия договора</a>
-      
-              </label>
-            </div>
-            <div class="button-send-modal">
-              <button type="submit" class="button-send-modal__button">Отправить</button>
-            </div>
-          </form>
-        </div>
-      
-      </div>
-       -->
+     
 
       <script src="./js/modal.js"></script>
+      <script src="./js/menu.js"></script>
 </body>
 </html>

@@ -27,12 +27,19 @@ img {
 }
 
 .general-input {
-    width: 448px;
+    width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     cursor: pointer;
     outline: none;
+
+    @include mq(mob){
+    width: 370px;
+}
+    @include mq(desc){
+    width: 448px;
+    }
 }
 
 
@@ -45,4 +52,8 @@ img {
 .positioning {
     display: flex;
     align-items: center;
+    @include mq(mob-only){
+        position: relative;
+        height: 60px;
+    }
 }

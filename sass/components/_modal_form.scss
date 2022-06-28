@@ -5,11 +5,25 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     position: fixed;
-    width: 528px;
-    min-height: 581px;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include mq(mob){
+        width: 450px;
+        max-height: 609px;
+    }
+
+    @include mq(tab){
+        width: 450px;
+        max-height: 609px;
+    }
+
+    @include mq(desc){
+        width: 528px;
+        min-height: 581px;
+    }
 
 }
 
@@ -40,19 +54,23 @@
     display: flex;
     flex-direction: column;
     padding: 40px 40px;
-
-    &__text {
+}
+    .modal-form__text {
     font-weight: var(--bold-font-weight);
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     letter-spacing: var(--first-letter-spacing);
 
     color: var(--first-link-color);
 
     margin-bottom: 12px;
     margin-top: 0;
+
+@include mq(desc) {
+    line-height: 1.15;
 }
 }
+
 
 
 .username {
@@ -148,7 +166,6 @@
     .feedback__input {
     color: #000;
     height: 120px;
-    width: 448px;
     padding: 16px 12px;
     margin-bottom: 0;
     resize: none;
@@ -187,12 +204,17 @@
 
     .checkbox__label {
     display: inline-block;
-
-    font-size: var(--first-font-size);
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: var(--first-letter-spacing);
 
     color: var(--first-text-color);
+
+    @include mq(desc){
+    font-size: var(--first-font-size);
+    line-height: 1.71;
+    }
+
 }
 
     .checkbox__input {
@@ -206,11 +228,15 @@
     outline: none;
     text-decoration: none;
     border-bottom: 1px solid var(--second-link-color);
-
-    font-size: var(--first-font-size);
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: var(--first-letter-spacing);
     color: var(--second-link-color);
+
+    @include mq(desc) {
+        font-size: var(--first-font-size);
+        line-height: 1.71;
+    }
 
 }
 
