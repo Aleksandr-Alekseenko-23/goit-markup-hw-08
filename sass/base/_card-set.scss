@@ -9,6 +9,7 @@
     flex-basis: 100%;
     @include mq(tab){
     flex-basis: calc(((100% - ((2) - 1) * 30px)) / 2);
+    
     }
     @include mq(desc){
         flex-basis: calc(((100% - ((4) - 1) * 30px)) / 4);
