@@ -14,7 +14,7 @@
 
     @include mq(mob){
         width: 450px;
-        
+        max-height: 609px;
         
     }
 
@@ -25,7 +25,7 @@
 
     @include mq(desc){
         width: 528px;
-        min-height: 581px;
+        height: 581px;
     }
 
 }
@@ -194,6 +194,7 @@
     border: 1px solid #212121;
     background-color: #fff;
     border-radius: 2px;
+    flex-shrink: 0;
     }
 
     .checkbox__input:checked + .checkbox__icon  {
@@ -201,6 +202,8 @@
         border-color: var(--second-link-color);
         background-image: url(../images/Vector.svg);
         background-size: contain;
+        background-repeat: no-repeat;
+        
     }
 
     .checkbox__input:focus ~ .checkbox__icon {
@@ -209,8 +212,10 @@
     
 
     .checkbox__label {
-   
-    display: inline-block;
+   display: flex;
+   align-items: center;
+    
+    // display: inline-block;
     text-align: left;
     font-size: 12px;
     line-height: 1.17;
@@ -221,6 +226,7 @@
     @include mq(desc){
     font-size: var(--first-font-size);
     line-height: 1.71;
+    justify-content: center;
     }
 
 }

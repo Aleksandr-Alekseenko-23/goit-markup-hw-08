@@ -414,6 +414,7 @@ img {
   width: 100vw;
   height: 100vh;
   top: 0;
+  left: 0;
 }
 
 @media (min-width: 768px) {
@@ -423,9 +424,9 @@ img {
 }
 
 .mob-container {
-  position: relative;
   display: flex;
   flex-direction: column;
+  width: 100%;
   height: 100%;
   padding-left: 40px;
   padding-top: 48px;
@@ -467,7 +468,6 @@ img {
   padding: 0;
   border: transparent;
   background-color: transparent;
-  display: block;
 }
 
 @media (min-width: 768px) {
@@ -713,19 +713,25 @@ img {
 }
 
 .benefits__items {
-  max-width: 450px;
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .benefits__items {
+    width: 450px;
+  }
 }
 
 @media (min-width: 768px) {
   .benefits__items {
-    max-width: 354px;
+    width: 354px;
   }
 }
 
 @media (min-width: 1200px) {
   .benefits__items {
-    max-width: 270px;
-    height: 120px;
+    width: 270px;
+    min-height: 227px;
   }
 }
 
@@ -751,19 +757,13 @@ img {
 }
 
 .benefits__icon {
-  display: inline-block;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
   background-color: #F5F4FA;
   width: 100%;
-}
-
-@media (min-width: 1200px) {
-  .benefits__icon {
-    width: 270px;
-    height: 120px;
-  }
+  height: 120px;
 }
 
 .work {
@@ -1385,6 +1385,7 @@ img {
 @media (min-width: 480px) {
   .modal-form-container {
     width: 450px;
+    max-height: 609px;
   }
 }
 
@@ -1398,7 +1399,7 @@ img {
 @media (min-width: 1200px) {
   .modal-form-container {
     width: 528px;
-    min-height: 581px;
+    height: 581px;
   }
 }
 
@@ -1548,6 +1549,7 @@ img {
   border: 1px solid #212121;
   background-color: #fff;
   border-radius: 2px;
+  flex-shrink: 0;
 }
 
 .checkbox__input:checked + .checkbox__icon {
@@ -1555,6 +1557,7 @@ img {
   border-color: var(--second-link-color);
   background-image: url(../images/Vector.svg);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .checkbox__input:focus ~ .checkbox__icon {
@@ -1562,7 +1565,8 @@ img {
 }
 
 .checkbox__label {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   text-align: left;
   font-size: 12px;
   line-height: 1.17;
@@ -1574,6 +1578,7 @@ img {
   .checkbox__label {
     font-size: var(--first-font-size);
     line-height: 1.71;
+    justify-content: center;
   }
 }
 
